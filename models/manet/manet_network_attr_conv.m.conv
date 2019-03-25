@@ -1,0 +1,16 @@
+File format:        model converter
+
+opnet_version:      10.5.A
+converter_date:     May 19 2004
+domain_type:        Network
+
+# Ad-Hoc Routing Parameters (10.5) -> AD-HOC Routing Parameters (11.0)
+start_converter
+    object_type:                Node
+    trigger_attribute:          "Ad-Hoc Routing Parameters"
+    library:                    manet_network_attr_conv
+    function:                   manet_routing_params_10_5_to_11_convert
+    order_priority:             100
+    introduced_opnet_version:   10.5.A
+    introduced_converter_date:  May 19 2004
+end_converter
